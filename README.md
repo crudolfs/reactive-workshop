@@ -50,6 +50,6 @@ delayed on purpose to simulate a long running search.
 
 Try to solve the TODO in the [RxWebSocketServer](vertx-reactive/src/main/java/com/rudolfs/vertx/reactive/RxWebSocketServer.java). 
 
-Additional exercise: rewrite the [WebSocketClient](vertx-reactive/src/main/java/com/rudolfs/vertx/reactive/WebSocketClient.java) 
+Optional exercise: rewrite the [WebSocketClient](vertx-reactive/src/main/java/com/rudolfs/vertx/reactive/WebSocketClient.java) 
 into a RxWebSocketClient (by using the io.vertx.reactivex.core.http.HttpClient).
 
