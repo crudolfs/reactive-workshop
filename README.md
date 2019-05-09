@@ -42,8 +42,11 @@ We'll use [Vert.x with RxJava2](https://vertx.io/docs/vertx-rx/java2/) to implem
 
 Open the RxWebSocketServer class in the *vertx-reactive* module and run the program, this will start a WebSocket Server 
 listening on port 8080. Use e.g. [Advanced Rest Client](https://install.advancedrestclient.com/install) to send some messages  
-to the WebSocket Server by connecting to ws://localhost:8080. The WebSocket Server simulates a long running search action for 
-each message (searchTerm) received. Try to solve the TODO in the RxWebSocketServer. 
+to the WebSocket Server by connecting to ws://localhost:8080. The WebSocket Server simulates the processing of a user's search 
+action (from e.g. a web page) and streams the search results back to the WebSocket Client connection. The search operation is 
+delayed on purpose to simulate a long running search. 
+
+Try to solve the TODO in the RxWebSocketServer. 
 
 Additional exercise: rewrite the WebSocketClient into a RxWebSocketClient (by using the io.vertx.reactivex.core.http.HttpClient).
 
