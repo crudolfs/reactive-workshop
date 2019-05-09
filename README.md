@@ -25,9 +25,11 @@ Fix the TODOs in the *reactive-samples* module in all FlowControlSample* classes
 ### 4.1 Server-Sent Events (SSE)
 We're going to use Micronaut to implement the server side of SSE.
 
-Open the TickController class in the *micronaut-reactive* module and have a look at the reactive return types of both methods.
+Open the [TickController](micronaut-reactive/src/main/java/micronaut/reactive/TickController.java) class in the 
+*micronaut-reactive* module and have a look at the reactive return types of both methods.
 
-Start the Application main class inside the *micronaut-reactive* module.
+Start the [Application](micronaut-reactive/src/main/java/micronaut/reactive/Application.java) main class inside the 
+*micronaut-reactive* module.
 
 Use curl as the client: 
 
@@ -46,7 +48,8 @@ to the WebSocket Server by connecting to ws://localhost:8080. The WebSocket Serv
 action (from e.g. a web page) and streams the search results back to the WebSocket Client connection. The search operation is 
 delayed on purpose to simulate a long running search. 
 
-Try to solve the TODO in the RxWebSocketServer. 
+Try to solve the TODO in the [RxWebSocketServer](vertx-reactive/src/main/java/com/rudolfs/vertx/reactive/RxWebSocketServer.java). 
 
-Additional exercise: rewrite the WebSocketClient into a RxWebSocketClient (by using the io.vertx.reactivex.core.http.HttpClient).
+Additional exercise: rewrite the [WebSocketClient](vertx-reactive/src/main/java/com/rudolfs/vertx/reactive/WebSocketClient.java) 
+into a RxWebSocketClient (by using the io.vertx.reactivex.core.http.HttpClient).
 
