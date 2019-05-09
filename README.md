@@ -38,7 +38,12 @@ The data events should be printed to your console now.
 As an exercise, try to add some additional endpoints and/or logic within the existing endpoint. 
 
 ### 4.2 WebSockets
+We'll use [Vert.x with RxJava2](https://vertx.io/docs/vertx-rx/java2/) to implement a WebSocket Server.
 
+Open the RxWebSocketServer class in the *vertx-reactive* module and run the program, this will start a WebSocket Server 
+listening on port 8080. Use e.g. [Advanced Rest Client](https://install.advancedrestclient.com/install) to send some messages  
+to the WebSocket Server by connecting to ws://localhost:8080. The WebSocket Server simulates a long running search action for 
+each message (searchTerm) received. Try to solve the TODO in the RxWebSocketServer. 
 
-### 4.3 WebSockets reactive search
+Additional exercise: rewrite the WebSocketClient into a RxWebSocketClient (by using the io.vertx.reactivex.core.http.HttpClient).
 
