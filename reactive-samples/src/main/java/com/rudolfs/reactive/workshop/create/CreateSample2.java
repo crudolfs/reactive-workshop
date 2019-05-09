@@ -18,7 +18,7 @@ public class CreateSample2 {
                 .collect(Collectors.toList());
 
         // TODO create a publisher that emits all items from the evens List of Integer
-        Flowable<String> flowable = Flowable.empty(); // TODO
+        Flowable<Integer> flowable = Flowable.empty(); // TODO
 
         flowable.subscribe(i -> LOG.info("number {}: ", i));
     }
