@@ -1,6 +1,8 @@
 # Workshop Reactive Programming
+This workshop is part of my presentation: [Thinking Reactive](https://gitpitch.com/crudolfs/thinking-reactive).
+
 In this workshop you'll learn the basics and some more advanced topics regarding Reactive Programming in Java.
-All samples will use RxJava2, but feel free to use Project Reactor instead.  
+All samples will use RxJava2, but feel free to use Project Reactor instead.
 
 ## 1. Creating Publishers
 This section is about creating Publishers.
